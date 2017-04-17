@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		
+	</body>
+</html>
+<script src="lib/jquery-1.10.2.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var data=[1,4,5,2,6,10,7,34,9,45]
+	for(var pp=0;pp<data.length;pp++){
+      			for(var mm=pp+1;mm<data.length;mm++){
+      				
+      				if(data[pp]>data[mm]){
+      					temp=data[pp];
+      					data[pp]=data[mm];
+      					data[mm]=temp;
+      				}
+      			}
+			}
+	console.log(data)
+	
+	
+	
+	/*冒泡排序*/
+var arr1=[7,12,4,23,21,2,17,13,6,33]//处理的数组
+for(var j=0;j<arr1.length;j++){
+	    for(var i=0;i<arr1.length;i++){
+	    if(arr1[i]>arr1[i+1]){
+	        var temp=arr1[i]
+	        arr1[i]=arr1[i+1]
+	        arr1[i+1]=temp
+	    }
+	}
+}
+console.log(arr1)
+//<!--选择排序-->
+//var arr1=[7,12,4,23,21,2,17,13,6,33]
+//var min=null,temp,index=1
+//for (var i=0;i<arr1.length;i++){
+//  min=arr1[i]
+//  for(var j=i+1;j<arr1.length;j++){
+//      if(arr1[j]<min){
+//          min=arr1[j]
+//          index=j
+//      }
+//  }
+//  temp=arr1[i]
+//  arr1[i]=min
+//  arr1[index]=temp
+//}
+//console.log(arr1)
+</script>
